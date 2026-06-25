@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&display=swap');
+
+:root {
+    --fonte-padrao: "Google Sans Code";
+    --cor-fundo: #FFED63;
+    --cor-fonte: #1A3A79;
+    --fundo-cards: #FFF8E0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor-fundo);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 15px;
+    color: var(--cor-fonte);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: var(--cor-fonte);
+    width: 100%;
+}
+
+.operacoes {
+    background-color: var(--fundo-cards);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 5px #d6c750;
+    width: 350px;
+}
+
+.condicoes {
+    background-color: var(--fundo-cards);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 5px #d6c750;
+    width: 350px;
+}
+
+.conversor {
+    background-color: var(--fundo-cards);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 5px #d6c750;
+    width: 350px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+
+button {
+    padding: 5px;
+    font-size: medium;
+    font-family: var(--fonte-padrao);
+    border-radius: 5px;
+    background-color: #D6EFF3;
+    color: var(--cor-fonte);
+    cursor: pointer;
+    box-shadow: 2px 4px 5px #e8dfc2;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    width: 250px;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 8px 10px #e8dfc2;
+}
